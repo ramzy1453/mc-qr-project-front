@@ -4,7 +4,6 @@ export function isEmailValid(email, data) {
 
 export function isPasswordValid(password, email, data) {
     const user = data.find(e => e.username === email)
-    console.log(user)
     return user?.fname + user?.lname === password
 }
 
